@@ -3,7 +3,6 @@ import java.lang.reflect.Array;
 public class DynamicArray<a> {
     private a[] array;
     private int size;
-
     public DynamicArray(Class<a> type) {
         this.array = (a[]) Array.newInstance(type, 50);
         this.size = 0;
